@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word</title>
+    <title>Guess The Word</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+</head>
+
+<body>
+    <h4 id="player1_name"></h4> <span id="player1_score"></span> <br>
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
+    <div class="container"></div>
+    <center>
+        <h2 style="color: white;">Guess The Word!</h2>
+        <h3 id="player_question"></h3>
+        <h3 id="player_answer"></h3>
+        <div id="output" class="col-lg-6"> </div> <br> <br> <label>Send You Word: <b style="color: red">Try putting
+                word which has 5 or more alphabet </b> </label> <input type="text" id="word" class="form-control"
+            placeholder="Word"> <br> <button class="btn btn-success" onclick="send()" style="width: 30%;">Send</button>
+    </center>
+    </div>
+    <script>
+        /*
+        var player1_name = localStorage.getItem("player1");
+        var player2_name = localStorage.getItem("player2");
+        var player1_score = 0;
+        var player2_score = 0;
+        var getWord;
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", send);
+
+        function send() {
+            if(document.getElementById("word") != null && document.getElementById("word").length > 5) {
+                getWord = document.getElementById("word").innerHTML;
+                var random1 = Math.floor(Math.random() * document.getElementById("word").length);
+                var random2 = Math.floor(Math.random() * document.getElementById("word").length);
+                var random3 = Math.floor(Math.random() * document.getElementById("word").length);
+                var replaced;
+                getWord.replace(random1, "_");
+                replaced.push(random1);
+
+                do{
+                    var random2 = Math.floor(Math.random() * document.getElementById("word").length);
+                }while(random2 == replaced[0]);
+                getWord.replace(random2, "_");
+                replaced.push(random2);
+
+                do{
+                    var random2 = Math.floor(Math.random() * document.getElementById("word").length);
+                }while(random2 == replaced[0] || replaced[1]);
+                getWord.replace(random3, "_");
+                replaced.push(random3);
+
+                console.log("output = " + getWord);
+            }
+        }*/
+    </script>
+    <script src="gamePLay.js"></script>
+</body>
+
+</html>
